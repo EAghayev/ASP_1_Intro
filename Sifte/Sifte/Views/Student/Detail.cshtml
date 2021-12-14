@@ -1,0 +1,18 @@
+﻿
+@{ Layout = "_Layout";}
+<main>
+    @if (ViewBag.Student == null)
+    {
+        <h1>Data yoxdur!</h1>
+    }
+    else
+    {
+        <ul>
+            <li>Id: @ViewBag.Student.Id</li>
+            <li>FullName: @ViewBag.Student.Name @ViewBag.Student.Surname</li>
+            <li>GroupNo: @ViewBag.Student.GroupNo</li>
+        </ul>
+    }
+</main>
+
+

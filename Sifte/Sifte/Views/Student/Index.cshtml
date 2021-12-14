@@ -1,0 +1,13 @@
+﻿@using Sifte.Models;
+
+
+@{ Layout = "_Layout";}
+<main>
+    <ul>
+        @foreach (Student item in ViewBag.Students)
+        {
+            <li>@item.Id @item.Name  @item.Surname</li>
+        }
+    </ul>
+</main>
+
